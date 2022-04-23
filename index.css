@@ -9,14 +9,14 @@
 :root{
   --primary-color: #ffffff;
   --secondary-color: #2c2c2c;
-  --purple: #6030b1;
+  --purple: #dc16b7;
 }
 
 
 .dark-mode{
   --primary-color: #2c2c2c;
 --secondary-color: #fff;
---purple: #9d66fc;
+--purple: #fd5adf;
 }
 
 .themetoggle{
@@ -118,8 +118,15 @@ a {
   transition: all 300ms ease;
 }
 
+.link__hover-effect--purple{
+  cursor: default;
+}
+
 .link__hover-effect--white:after {
   background-color: var(--primary-color);
+}
+.link__hover-effect--purple:after {
+  background-color: var(--purple);
 }
 .link__hover-effect--black:after {
   background-color: var(--secondary-color);
@@ -127,6 +134,7 @@ a {
 
 #themea{
   width: 200px;
+  cursor: default;
 }
 
 .link__hover-effect:hover:after {
@@ -177,7 +185,7 @@ nav {
 }
 
 .nav__link--anchor-primary {
-  background-color: #6030b1;
+  background-color: #dc16b7;
   padding: 8px 20px;
   border-radius: 50px;
   color: #fff;
@@ -186,7 +194,7 @@ nav {
 }
 
 .nav__link--anchor-primary:hover {
-  background-color: #5d3eff;
+  background-color: #c446ff;
 }
 
 .container {
