@@ -93,6 +93,7 @@ span {
   color: var(--secondary-color);
   text-align: center;
   line-height: 1.25;
+  cursor: default;
 }
 
 h1 {
@@ -206,6 +207,7 @@ nav {
   color: var(--purple);
   margin: 0 12px;
   font-weight: bold;
+  cursor: default;
 }
 
 .text-purple {
@@ -489,6 +491,7 @@ section:nth-child(even) {
 /* footer */
 
 footer {
+  cursor: default;
   background-color: #242424;
 }
 
