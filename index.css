@@ -109,6 +109,10 @@ a {
   position: relative;
 }
 
+#defaultcursor{
+  cursor: default !important;
+}
+
 .link__hover-effect:after {
   content: "";
   position: absolute;
@@ -213,6 +217,7 @@ nav {
 
 .text-purple {
   color:var(--purple);
+  cursor: text !important;
 }
 
 section:nth-child(even) {
@@ -285,6 +290,7 @@ section:nth-child(even) {
   font-size: 20px;
   margin-bottom: 28px;
   animation: fade-up 850ms 650ms backwards;
+  cursor: default;
 }
 
 .about-me__link {
