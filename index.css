@@ -18,6 +18,9 @@
 --secondary-color: #fff;
 --purple: #fd5adf;
 }
+#line.dark-mode{
+  filter: invert();
+}
 
 .themetoggle{
   width: 27px;
@@ -39,6 +42,12 @@ body{
   background-color: var(--primary-color);
   color: var(--secondary-color);
   transition: all 350ms ease;
+}
+
+::selection{
+  background-color: #c446ff;
+  color: white;
+  
 }
 
 html {
@@ -98,6 +107,69 @@ span {
 
 h1 {
   font-size: 36px;
+}
+
+.layer{
+  position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -4;
+    /* animation: fade-up 500ms 550ms backwards; */
+}
+html, body {
+  max-width: 100% !important; 
+  overflow-x: hidden !important;
+}
+
+#dbico{
+  left: -10%;
+  top:40%;
+  height: 50%;
+  width: 50%;
+}
+
+#cloudico{
+  left: -30%;
+  top:-25%;
+}
+
+#blutri{
+  top: 600px;
+}
+
+#cross{
+  left: 20px;
+}
+
+#web{
+  left: 55%;
+  top: -5%;
+}
+
+#heartico{
+  left: -20%;
+  top: 15%;
+}
+
+#crescentico{
+  left:40%;
+  top:40%;
+}
+#flower{
+  top:30%;
+  left: 10%;
+}
+
+#line1{
+  left: 55%;
+  top: 33%;
+}
+#line2{
+  left: 55%;
+  top: 33%;
 }
 
 p {
