@@ -621,6 +621,10 @@ footer {
 
 /* mobile optimization */
 @media (max-width: 768) {
+  .layer{
+    display: none;
+  }
+  
   nav {
     height: 68px;
   }
@@ -647,6 +651,9 @@ footer {
 
 @media (max-width: 480px) {
   .nav__link:not(:last-child) {
+    display: none;
+  }
+  .layer{
     display: none;
   }
 
