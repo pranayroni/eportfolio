@@ -377,8 +377,39 @@ section:nth-child(even) {
   color:var(--purple);
 }
 
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  opacity: 0;
+  width: 150px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  height: 25px;
+  transition: 0.3s;
+
+  /* Position the tooltip */
+  position: absolute;
+  margin-left: 5px;
+  z-index: 1;
+}
+.tooltiptext{
+  font-size: 12px;
+  text-align: center;
+  
+}
+.tooltip:hover .tooltiptext {
+  opacity: 1;
+}
 .about-me__links {
+  width: 200px;
   animation: fade-up 850ms 850ms backwards;
+  text-align: center !important;
 }
 
 @keyframes fade-up {
