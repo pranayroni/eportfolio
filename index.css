@@ -12,6 +12,8 @@
   --primary-color: #2c2c2c;
   --secondary-color: #fff;
   --purple: #fd5adf;
+  --bg: white;
+  --bgtext: black;
   
 }
 
@@ -20,6 +22,8 @@
   --primary-color: #ffffff;
   --secondary-color: #2c2c2c;
   --purple: #dc16b7;
+  --bg: black;
+  --bgtext: white;
 }
 #line.dark-mode{
   filter: invert();
@@ -390,8 +394,8 @@ section:nth-child(even) {
 .tooltip .tooltiptext {
   opacity: 0;
   width: 150px;
-  background-color: black;
-  color: #fff;
+  background-color: var(--bg);
+  color: var(--bgtext);
   text-align: center;
   border-radius: 6px;
   padding: 5px 0;
