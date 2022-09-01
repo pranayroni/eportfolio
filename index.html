@@ -66,7 +66,7 @@
             >
           </li>
           <li class="nav__link">
-            <a id="themea"class="link__hover-effect link__hover-effect--black"><img src="./assets/light.png" alt="theme toggler" class="themetoggle nav__link--anchor nav__link" id="themebutton"></a>
+            <a id="themea"class="link__hover-effect link__hover-effect--black"><img src="./assets/darkmode.png" alt="theme toggler" class="themetoggle nav__link--anchor nav__link" id="themebutton"></a>
           </li>
           
         </ul>
@@ -445,17 +445,18 @@
     icon.onclick = function(){
       document.body.classList.toggle("dark-mode");
       if(document.body.classList.contains("dark-mode")){
-        line1.style.cssText+="filter: invert();";
-        line2.style.cssText+="filter: invert();";
-        icon.src = "./assets/darkmode.png";
+        line1.style.filter = "none"
+        line2.style.filter = "none"
+        
+        icon.src = "./assets/light.png";
         for(let i = 0; i < footers.length; i++){
           footers[i].classList.add("link__hover-effect--black");
           footers[i].classList.remove("link__hover-effect--white");
         }
     } else{
-      icon.src = "./assets/light.png";
-      line1.style.cssText = line1.style.cssText.substring(0, line1.style.cssText.length - 17);
-      line2.style.cssText = line2.style.cssText.substring(0, line2.style.cssText.length - 17);
+      icon.src = "./assets/darkmode.png";
+      line1.style.filter = "invert()"
+      line2.style.filter = "invert()"
       for(let i = 0; i < footers.length; i++){
         footers[i].classList.add("link__hover-effect--white");
         footers[i].classList.remove("link__hover-effect--black");

@@ -7,16 +7,19 @@
 }
 
 :root{
-  --primary-color: #ffffff;
-  --secondary-color: #2c2c2c;
-  --purple: #dc16b7;
+  
+  
+  --primary-color: #2c2c2c;
+  --secondary-color: #fff;
+  --purple: #fd5adf;
+  
 }
 
 
 .dark-mode{
-  --primary-color: #2c2c2c;
---secondary-color: #fff;
---purple: #fd5adf;
+  --primary-color: #ffffff;
+  --secondary-color: #2c2c2c;
+  --purple: #dc16b7;
 }
 #line.dark-mode{
   filter: invert();
@@ -166,10 +169,12 @@ html, body {
 #line1{
   left: 55%;
   top: 33%;
+  filter: invert();
 }
 #line2{
   left: 55%;
   top: 33%;
+  filter: invert();
 }
 
 p {

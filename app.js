@@ -8,4 +8,5 @@ window.addEventListener("DOMContentLoaded", () => {
       span.classList.add("active");
     }, (idx + 1)(400));
   });
+  
 });
