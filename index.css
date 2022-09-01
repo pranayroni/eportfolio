@@ -59,6 +59,16 @@ body{
 
 html {
   scroll-behavior: smooth;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0;  
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #FF0000;
 }
 
 /* splash */
@@ -381,6 +391,8 @@ section:nth-child(even) {
   padding: 0 16px;
   transition: all 300ms ease;
 }
+
+
 
 .about-me__link:hover{
   color:var(--purple);
