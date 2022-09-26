@@ -227,6 +227,9 @@ a {
 .link__hover-effect--black:after {
   background-color: var(--secondary-color);
 }
+.link__hover-effect--swhite:after{
+  background-color: white;
+}
 
 #themea{
   width: 200px;
