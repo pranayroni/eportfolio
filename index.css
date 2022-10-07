@@ -711,31 +711,40 @@ footer {
   .layer{
     display: none;
   }
+  p{
+    font-size: 15px;
+  }
+  
 
   .project__description {
     padding: 0;
     left: 0;
     width: 100%;
+    font-size: 13px;
   }
   .project__description--para {
     display: none;
+    
   }
   .footer__logo--img {
     display: none;
   }
 
   .project__description--title {
-    font-size: 32px;
+    font-size: 25px;
+    margin-top: 15px;
     line-height: 1;
     text-align: center;
   }
   .project__description--links {
     display: flex;
     justify-content: center;
+    margin-bottom: 15px;
   }
 
   .project__description--sub-title {
     text-align: center;
     margin: 12px 0;
+    display: none;
   }
 }
