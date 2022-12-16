@@ -348,7 +348,7 @@ section:nth-child(even) {
 .about-me__picture--mask {
   width: 200px;
   height: 200px;
-  border-radius: 5% 5% 10% 10%;
+  border-radius: 15% 15% 10% 10%;
   overflow: hidden;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.16);
   margin-bottom: 28px;
