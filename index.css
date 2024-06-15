@@ -32,13 +32,15 @@ figure.dark-mode-pfp-shadow{
 #line.dark-mode{
   filter: invert();
 }
-
+#themebutton {
+  padding: 0px;
+}
 .themetoggle{
   height: 32px;
   margin: 0px!important;
   
   position: relative;
-  bottom: 3px;
+  top: 3px;
   cursor: pointer;
   transition: all .2s ease-in-out;
 }
@@ -277,6 +279,7 @@ nav {
 
 .nav__link--list {
   display: flex;
+  align-items: center;
 }
 
 .nav__link--anchor {
@@ -710,6 +713,12 @@ footer {
   .project__description {
     left: 30px;
     padding-right: 30px;
+  }
+}
+
+@media (max-width: 502px){
+  .nav__link:not(:nth-last-child(-n+2)) {
+    display: none;
   }
 }
 

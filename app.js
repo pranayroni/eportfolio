@@ -11,6 +11,35 @@ window.addEventListener("DOMContentLoaded", () => {
   
 });
 
+window.addEventListener('resize', function() {
+  let personalLogo = document.querySelectorAll('.personal__logo');
+  
+  let aboutMePicture = document.querySelector('.about-me__picture--mask');
+  let aboutMePictureWidth = aboutMePicture.offsetWidth;
+  if (window.innerWidth <= 350) {
+  for(let i =0; i < personalLogo.length; i++){
+    
+      personalLogo[i].textContent = 'Pranay';
+    } 
+  }
+  else {
+    for(let i=0 ; i < personalLogo.length; i++){
+      personalLogo[i].textContent = 'Pranay Roni'; // replace with the original content
+    }
+  }
+
+  if (this.window.innerWidth < aboutMePictureWidth) {
+    let scale = window.innerWidth / aboutMePictureWidth;
+    aboutMePicture.style.transform = `scale(${scale})`;
+  } else {
+    aboutMePicture.style.transform = `scale(1)`;
+  }
+
+
+
+
+});
+
 // dark mode
 
 var icon = document.getElementById("themebutton");
