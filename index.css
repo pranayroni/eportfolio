@@ -374,7 +374,7 @@ section:nth-child(even) {
   display: inline-block;
   width: 2px;
   height: 17px;
-  background-color: white;
+  background-color: var(--secondary-color);
   margin-left: 0px;
   animation: blink .5s linear infinite alternate;
 }
