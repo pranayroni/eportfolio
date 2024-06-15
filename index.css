@@ -12,9 +12,9 @@
   --primary-color: #2c2c2c;
   --secondary-color: #fff;
   --purple: #fd5adf;
-  --bg: white;
+  --bg: #242424;
   --bgtext: black;
-  --pfp-shadow: 2px 11px 20px 9px rgb(255 217 248), 6px 6px 20px 11px rgb(0 0 0 / 9%);
+  --pfp-shadow: 0px 0px 20px 9px rgb(255 217 248), 6px 6px 20px 11px rgb(0 0 0 / 9%);
 }
 
 
@@ -22,11 +22,15 @@
   --primary-color: #ffffff;
   --secondary-color: #2c2c2c;
   --purple: #dc16b7;
-  --bg: black;
+  --bg: #ff86b3;
   --bgtext: white;
 }
 
-figure.dark-mode-pfp-shadow{
+.contact_button{
+  margin: 0 auto;
+}
+
+figure.dark-mode-pfp-shadow, .project__wrapper.dark-mode-pfp-shadow{
   --pfp-shadow: 11px 11px 8px 0 rgba(0, 0, 0, 0.2), 6px 6px 20px 11px rgb(0 0 0 / 9%);
 }
 #line.dark-mode{
@@ -40,7 +44,6 @@ figure.dark-mode-pfp-shadow{
   margin: 0px!important;
   
   position: relative;
-  top: 3px;
   cursor: pointer;
   transition: all .2s ease-in-out;
 }
@@ -277,9 +280,11 @@ nav {
   padding: 0 12px;
 }
 
+
 .nav__link--list {
   display: flex;
-  align-items: center;
+  align-items:center;
+  justify-content: center;
 }
 
 .nav__link--anchor {
@@ -352,14 +357,18 @@ section:nth-child(even) {
   text-align: center;
 }
 
+
+
 .about-me__picture--mask {
   width: 200px;
   height: 200px;
   border-radius: 25%; 
 
   overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 28px;
-  transition: all 500ms ease;
+  transition: all 600ms ease;
   animation: animate-profile-picture 1000ms 200ms backwards;
   box-shadow: var(--pfp-shadow);
 }
@@ -379,6 +388,8 @@ section:nth-child(even) {
 .about-me__picture {
   width: 100%;
   height: 100%;
+  margin-left: auto;
+  margin-right: auto;
   /* transform: scale(.5); */
 
   /* height: 120px; */
@@ -413,11 +424,13 @@ section:nth-child(even) {
   position: relative;
   display: inline-block;
 }
-
+body.dark-mode .tooltip .tooltiptext {
+  background-color: var(--bg);
+}
 .tooltip .tooltiptext {
   opacity: 0;
   width: 150px;
-  background-color: var(--bg);
+  background-color: white;
   color: var(--bgtext);
   text-align: center;
   border-radius: 6px;
@@ -558,7 +571,7 @@ section:nth-child(even) {
 
 .project__wrapper {
   display: flex;
-  box-shadow: 0 20px 80px rgba(0, 0, 0, 0.45);
+  box-shadow: var(--pfp-shadow); 
   border-radius: 20px;
   overflow: hidden;
   position: relative;
@@ -631,7 +644,12 @@ section:nth-child(even) {
 }
 
 /* footer */
+body.dark-mode footer {
+  background: linear-gradient(to top, var(--bg) 50%, white 100%);}
 
+body.dark-mode .footer__social--link .footer__copyright{
+  color: var(--secondary-color);
+}
 footer {
   cursor: default;
   background-color: #242424;

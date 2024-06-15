@@ -1,13 +1,22 @@
-document.addEventListener("mousemove", parallax);
-function parallax(e)
-{
-    this.querySelectorAll('.layer').forEach(layer=>{
-        const speed = layer.getAttribute('data-speed')
+let mouseX = 0;
+let mouseY = 0;
 
-        const x = (window.innerWidth-e.pageX*speed)/100
-        const y = (window.innerHeight-e.pageY*speed)/100
+document.addEventListener("mousemove", (e) => {
+  mouseX = e.pageX;
+  mouseY = e.pageY;
+});
 
-        layer.style.transform = `translateX(${x}px) translateY(${y}px)`
-        // layer.style.transform = `rotate(${(x+y)%360/2}deg)`
-    })
+function parallax() {
+  document.querySelectorAll('.layer').forEach(layer => {
+    const speed = layer.getAttribute('data-speed');
+
+    const x = (window.innerWidth - mouseX * speed) / 100;
+    const y = (window.innerHeight - mouseY * speed) / 100;
+
+    layer.style.transform = `translate(${x}px, ${y}px)`;
+  });
+
+  requestAnimationFrame(parallax);
 }
+
+requestAnimationFrame(parallax);
