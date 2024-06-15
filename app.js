@@ -15,7 +15,6 @@ window.addEventListener("DOMContentLoaded", () => {
 
 var icon = document.getElementById("themebutton");
 const footers = document.getElementsByClassName("footer__social--link");
-let line1 = document.getElementById("line1")
 let line2 = document.getElementById("line2")
 let pfps = document.getElementsByClassName("about-me__picture--mask");
 icon.onclick = function(){
@@ -24,7 +23,6 @@ icon.onclick = function(){
     pfps[i].classList.toggle("dark-mode-pfp-shadow");
   }
   if(document.body.classList.contains("dark-mode")){
-    line1.style.filter = "none"
     line2.style.filter = "none"
     
     icon.src = "./assets/light.png";
@@ -34,7 +32,6 @@ icon.onclick = function(){
     }
 } else{
   icon.src = "./assets/darkmode.png";
-  line1.style.filter = "invert()"
   line2.style.filter = "invert()"
   for(let i = 0; i < footers.length; i++){
     footers[i].classList.add("link__hover-effect--white");
