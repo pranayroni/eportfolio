@@ -46,8 +46,12 @@ var icon = document.getElementById("themebutton");
 const footers = document.getElementsByClassName("footer__social--link");
 let line2 = document.getElementById("line2")
 let pfps = document.getElementsByClassName("about-me__picture--mask");
+let projects = document.getElementsByClassName("project__wrapper");
 icon.onclick = function(){
   document.body.classList.toggle("dark-mode");
+  for(let i = 0; i < projects.length; i++){
+    projects[i].classList.toggle("dark-mode-pfp-shadow");
+  }
   for(let i = 0; i < pfps.length; i++){
     pfps[i].classList.toggle("dark-mode-pfp-shadow");
   }
