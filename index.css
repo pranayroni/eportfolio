@@ -281,6 +281,7 @@ nav {
   color: var(--secondary-color);
   text-decoration: none;
   font-weight: 700;
+  padding-bottom: 5px;
 }
 
 .nav__link--anchor-primary {
@@ -373,6 +374,7 @@ section:nth-child(even) {
   /* transform: scale(.5); */
 
   /* height: 120px; */
+  padding-top: 5px;
 }
 
 .about-me__info--title {
