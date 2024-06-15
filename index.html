@@ -74,7 +74,7 @@
       <div class="flex-1">
         <div class="about-me__info row">
           <div class="about-me__info--container">
-            <figure class="about-me__picture--mask">
+            <figure class="about-me__picture--mask dark-mode-pfp-shadow">
               <img
                 src="./assets/mesuit.jpeg"
                 class="about-me__picture"
@@ -457,34 +457,7 @@
       </div>
     </footer>
   </body>
-  <script>
-    var icon = document.getElementById("themebutton");
-    const footers = document.getElementsByClassName("footer__social--link");
-    let line1 = document.getElementById("line1")
-    let line2 = document.getElementById("line2")
-    icon.onclick = function(){
-      document.body.classList.toggle("dark-mode");
-      if(document.body.classList.contains("dark-mode")){
-        line1.style.filter = "none"
-        line2.style.filter = "none"
-        
-        icon.src = "./assets/light.png";
-        for(let i = 0; i < footers.length; i++){
-          footers[i].classList.add("link__hover-effect--black");
-          footers[i].classList.remove("link__hover-effect--white");
-        }
-    } else{
-      icon.src = "./assets/darkmode.png";
-      line1.style.filter = "invert()"
-      line2.style.filter = "invert()"
-      for(let i = 0; i < footers.length; i++){
-        footers[i].classList.add("link__hover-effect--white");
-        footers[i].classList.remove("link__hover-effect--black");
-      }
-    }
-  }
-    
-  </script>
+  <script src="app.js"></script>
   <script src="parallax.js"></script>
   <script src="https://unpkg.com/scrollreveal"></script>
   <script src="index.js"></script>

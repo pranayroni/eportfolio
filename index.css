@@ -14,7 +14,7 @@
   --purple: #fd5adf;
   --bg: white;
   --bgtext: black;
-  
+  --pfp-shadow: 2px 11px 20px 9px rgb(255 217 248), 6px 6px 20px 11px rgb(0 0 0 / 9%);
 }
 
 
@@ -24,6 +24,10 @@
   --purple: #dc16b7;
   --bg: black;
   --bgtext: white;
+}
+
+figure.dark-mode-pfp-shadow{
+  --pfp-shadow: 11px 11px 8px 0 rgba(0, 0, 0, 0.2), 6px 6px 20px 11px rgb(0 0 0 / 9%);
 }
 #line.dark-mode{
   filter: invert();
@@ -351,10 +355,10 @@ section:nth-child(even) {
   border-radius: 25%; 
 
   overflow: hidden;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.16);
   margin-bottom: 28px;
+  transition: all 500ms ease;
   animation: animate-profile-picture 1000ms 200ms backwards;
-  box-shadow: 11px 11px 8px 0 rgba(0, 0, 0, 0.2), 6px 6px 20px 11px rgb(0 0 0 / 9%);
+  box-shadow: var(--pfp-shadow);
 }
 
 @keyframes animate-profile-picture {
